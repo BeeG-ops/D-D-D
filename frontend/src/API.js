@@ -1,4 +1,4 @@
-const API_BASE_URL = "https://your-backend-url.vercel.app";
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "https://https://d-d-d.vercel.app/";
 
 // 🔐 Send Encrypted Message to Backend
 export async function storeMessage(encryptedData, hmacSignature) {
